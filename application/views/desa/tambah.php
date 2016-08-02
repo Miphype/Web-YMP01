@@ -89,6 +89,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
      <div class="form-group">
@@ -97,6 +101,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
     <div class="form-group">
@@ -105,6 +113,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
     <div class="form-group">
@@ -113,6 +125,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
     <div class="form-group">
@@ -121,6 +137,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
     <div class="form-group">
@@ -132,6 +152,10 @@
             <input type="number" name="jumlah_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="ada"> Ada
+            <input type="radio" name="gender" value="tidak"> Tidak
+        </div>
     </div>
 
     <div class="form-group">
@@ -255,6 +279,66 @@
     </div>
 
     <br><h4>C. KONDISI SOSIAL EKONOMI DAN GEOGRAFIS</h4><br>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Mata pencaharian utama penduduk</label>
+        <div class="col-sm-3">
+            <select name="jk" class="form-control">
+                <option></option>
+                <option value="Bertani">Bertani</option>
+                <option value="Berdagang">Berdagang</option>
+                <option value="Nelayan">Nelayan</option>
+                <option value="Pegawai Negeri">Pegawai Negeri</option>
+                <option value="Pegawai Swasta">Pegawai Swasta</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Lainnya</label>
+        <div class="col-sm-3">
+            <input type="text" name="jumlah_penduduk_jw" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Rata-rata penghasilan penduduk per bulan</label>
+        <div class="col-sm-3">
+            <select name="jk" class="form-control">
+                <option></option>
+                <option value="< Rp 2 Juta">&lt; Rp 2 Juta</option>
+                <option value="Rp 2 Juta">Rp 2 Juta</option>
+                <option value="Rp 3 - 5 Juta">Rp 3 - 5 Juta</option>
+                <option value="Rp 5 - 10 Juta">Rp 5 - 10 Juta</option>
+                <option value="Diatas Rp 10 Juta">Diatas Rp 10 Juta</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Besar biaya rata-rata yg dikeluarkan penduduk utk air minum per bulan</label>
+        <div class="col-sm-3">
+            <select name="jk" class="form-control">
+                <option></option>
+                <option value="< Rp 25.000">&lt; Rp 25.000</option>
+                <option value="Rp 25.000 - 50.000">Rp 25.000 - 50.000</option>
+                <option value="Diatas Rp 50.000">Diatas Rp 50.000</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-5 control-label">Tipe wilayah</label>
+        <div class="col-sm-3">
+            <select name="jk" class="form-control">
+                <option></option>
+                <option value="Dataran rendah/datar">Dataran rendah/datar</option>
+                <option value="Dataran tinggi/pegunungan">Dataran tinggi/pegunungan</option>
+                <option value="Perairan sungai">Perairan sungai</option>
+                <option value="Perairan laut">Perairan laut</option>
+            </select>
+        </div>
+    </div>
 
 
 
