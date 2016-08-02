@@ -26,7 +26,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label">Jumlah dusun di desa</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_dusun" class="form-control">
+            <input type="number" name="jml_dusun" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
     </div>
@@ -34,11 +34,11 @@
     <div class="form-group">
         <label class="col-sm-3 control-label">Jumlah penduduk desa</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_penduduk_jw" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Jiwa</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_kk" class="form-control">
+            <input type="number" name="jml_penduduk_kk" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -46,7 +46,7 @@
     <div class="form-group">
         <label class="col-sm-3 control-label">Jumlah penduduk perempuan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_p" class="form-control">
+            <input type="number" name="jml_penduduk_p" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Jiwa</label>
     </div>
@@ -54,11 +54,11 @@
     <div class="form-group">
         <label class="col-sm-4 control-label">Jumlah penduduk yg mendapat layanan air minum layak</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_amlayak_kk" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_kk" class="form-control">
+            <input type="number" name="jmlp_amlayak_ds" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
     </div>
@@ -66,7 +66,7 @@
     <div class="form-group">
         <label class="col-sm-4 control-label">Jumlah penduduk yg mendapat layanan air minum sistem perpipaan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_amsp" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -74,11 +74,11 @@
     <div class="form-group">
         <label class="col-sm-4 control-label">Jumlah sambungan rumah (SR)</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_sr_sr" class="form-control">
         </div>
         <label class="col-sm-1 control-label">SR</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_kk" class="form-control">
+            <input type="number" name="jml_sr_kk" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -86,82 +86,82 @@
     <div class="form-group">
         <label class="col-sm-4 control-label">Program Pamsimas</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="p_pasimas" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="p_pasimas_st" value="Ada"> Ada
+            <input type="radio" name="p_pasimas_st" value="Tidak"> Tidak
         </div>
     </div>
 
      <div class="form-group">
         <label class="col-sm-4 control-label">Program Dana Alokasi Khusus (DAK)</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="p_dak" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="p_dak_st" value="Ada"> Ada
+            <input type="radio" name="p_dak_st" value="Tidak"> Tidak
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-4 control-label">PNPM Perkotaan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="pnpm_kota" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="pnpm_kota_st" value="ada"> Ada
+            <input type="radio" name="pnpm_kota_st" value="tidak"> Tidak
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-4 control-label">PNPM Perdesaan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="pnpm_desa" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="pnpm_desa_st" value="ada"> Ada
+            <input type="radio" name="pnpm_desa_st" value="tidak"> Tidak
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-4 control-label">Swadaya / Perorangan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="swadaya" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="swadaya_st" value="ada"> Ada
+            <input type="radio" name="swadaya_st" value="tidak"> Tidak
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-4 control-label">Lainnya (sebutkan)</label>
         <div class="col-sm-3">
-            <input type="text" name="jumlah_penduduk_jw" class="form-control">
+            <input type="text" name="lainnya" class="form-control">
         </div>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="lainnya_ds" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="gender" value="ada"> Ada
-            <input type="radio" name="gender" value="tidak"> Tidak
+            <input type="radio" name="lainnya_st" value="ada"> Ada
+            <input type="radio" name="lainnya_st" value="tidak"> Tidak
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Permanen</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_jsp" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -169,7 +169,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Semi Permanen</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_jssp" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -177,7 +177,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Sharing</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_jss" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -185,7 +185,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg mendapat pelayanan pengelolaan sampah (diangkut petugas)</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_pps" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -193,7 +193,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg menngelola sampahnya sendiri</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_mss" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -201,7 +201,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg sudah menerapkan prinsip 3R</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_p3r" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -209,7 +209,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg membakar sampah</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_ms" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -217,7 +217,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah ke badan air (sungai, selokan, kolam)</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_mskba" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -225,7 +225,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah ke lahan kosong</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_msklk" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -233,7 +233,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah di kebun/lahan kosong</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmlp_msdklk" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -241,7 +241,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg dilatih</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_wirastbm" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Orang</label>
     </div>
@@ -249,7 +249,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg dilatih - Perempuan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_wirastbm_p" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -257,7 +257,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg aktif</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_wirastbm_a" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Orang</label>
     </div>
@@ -265,7 +265,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg aktif - Perempuan</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jml_wirastbm_ap" class="form-control">
         </div>
         <label class="col-sm-1 control-label">KK</label>
     </div>
@@ -273,7 +273,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Jumlah sekolah yg pernah menerima program STBM atau Cuci tangan pakai sabun</label>
         <div class="col-sm-2">
-            <input type="number" name="jumlah_penduduk_jw" class="form-control">
+            <input type="number" name="jmls_pstbm" class="form-control">
         </div>
         <label class="col-sm-1 control-label">Sekolah</label>
     </div>
@@ -283,7 +283,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Mata pencaharian utama penduduk</label>
         <div class="col-sm-3">
-            <select name="jk" class="form-control">
+            <select name="matapencaharian" class="form-control">
                 <option></option>
                 <option value="Bertani">Bertani</option>
                 <option value="Berdagang">Berdagang</option>
@@ -297,14 +297,14 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Lainnya</label>
         <div class="col-sm-3">
-            <input type="text" name="jumlah_penduduk_jw" class="form-control">
+            <input type="text" name="matapencaharian_dll" class="form-control">
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-5 control-label">Rata-rata penghasilan penduduk per bulan</label>
         <div class="col-sm-3">
-            <select name="jk" class="form-control">
+            <select name="rr_penghasilan" class="form-control">
                 <option></option>
                 <option value="< Rp 2 Juta">&lt; Rp 2 Juta</option>
                 <option value="Rp 2 Juta">Rp 2 Juta</option>
@@ -318,7 +318,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Besar biaya rata-rata yg dikeluarkan penduduk utk air minum per bulan</label>
         <div class="col-sm-3">
-            <select name="jk" class="form-control">
+            <select name="rr_airminum" class="form-control">
                 <option></option>
                 <option value="< Rp 25.000">&lt; Rp 25.000</option>
                 <option value="Rp 25.000 - 50.000">Rp 25.000 - 50.000</option>
@@ -330,7 +330,7 @@
     <div class="form-group">
         <label class="col-sm-5 control-label">Tipe wilayah</label>
         <div class="col-sm-3">
-            <select name="jk" class="form-control">
+            <select name="tipe_wil" class="form-control">
                 <option></option>
                 <option value="Dataran rendah/datar">Dataran rendah/datar</option>
                 <option value="Dataran tinggi/pegunungan">Dataran tinggi/pegunungan</option>

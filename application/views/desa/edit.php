@@ -19,7 +19,7 @@
     <div class="form-group">
         <label class="col-lg-2 control-label">Kota / Kabupaten</label>
         <div class="col-lg-5">
-            <input type="text" name="kecamatan" class="form-control" value="<?php echo $desa['kecamatan'];?>">
+            <input type="text" name="kota" class="form-control" value="<?php echo $desa['kota'];?>">
         </div>
     </div>
     <div class="form-group well">
