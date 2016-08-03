@@ -13,6 +13,11 @@
                                                 <td>
                                                     <span class="glyphicon glyphicon-pencil text-primary"></span> <a href="<?php echo site_url('desa');?>">Data Desa</a>
                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-pencil text-primary"></span> <a href="<?php echo site_url('sab');?>">Data Sumber Air Baku</a>
+                                                </td>
                                             </tr>   
                                             <tr>
                                                 <td>

@@ -114,8 +114,8 @@
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="pnpm_kota_st" value="ada"> Ada
-            <input type="radio" name="pnpm_kota_st" value="tidak"> Tidak
+            <input type="radio" name="pnpm_kota_st" value="Ada"> Ada
+            <input type="radio" name="pnpm_kota_st" value="Tidak"> Tidak
         </div>
     </div>
 
@@ -126,8 +126,8 @@
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="pnpm_desa_st" value="ada"> Ada
-            <input type="radio" name="pnpm_desa_st" value="tidak"> Tidak
+            <input type="radio" name="pnpm_desa_st" value="Ada"> Ada
+            <input type="radio" name="pnpm_desa_st" value="Tidak"> Tidak
         </div>
     </div>
 
@@ -138,8 +138,8 @@
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="swadaya_st" value="ada"> Ada
-            <input type="radio" name="swadaya_st" value="tidak"> Tidak
+            <input type="radio" name="swadaya_st" value="Ada"> Ada
+            <input type="radio" name="swadaya_st" value="Tidak"> Tidak
         </div>
     </div>
 
@@ -153,8 +153,8 @@
         </div>
         <label class="col-sm-1 control-label">Dusun</label>
         <div class="col-sm-2">
-            <input type="radio" name="lainnya_st" value="ada"> Ada
-            <input type="radio" name="lainnya_st" value="tidak"> Tidak
+            <input type="radio" name="lainnya_st" value="Ada"> Ada
+            <input type="radio" name="lainnya_st" value="Tidak"> Tidak
         </div>
     </div>
 
