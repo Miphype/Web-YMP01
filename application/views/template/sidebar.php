@@ -18,7 +18,12 @@
                                                 <td>
                                                     <span class="glyphicon glyphicon-pencil text-primary"></span> <a href="<?php echo site_url('sab');?>">Data Sumber Air Baku</a>
                                                 </td>
-                                            </tr>   
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="glyphicon glyphicon-pencil text-primary"></span> <a href="<?php echo site_url('jspams');?>">Data Jenis &amp; Sistem Penyediaan Air Minum dan Sanitasi</a>
+                                                </td>
+                                            </tr>  
                                             <tr>
                                                 <td>
                                                     <span class="glyphicon glyphicon-pencil text-primary"></span> <a href="<?php echo site_url('anggota');?>">Anggota</a>

@@ -3,348 +3,111 @@
 <?php echo $message;?>
 
 <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-    <h4>A. LOKASI</h4><br>
     <div class="form-group">
         <label class="col-lg-2 control-label">Nama Desa</label>
         <div class="col-lg-5">
-            <input type="text" name="nama_desa" class="form-control" value="<?php echo $desa['nama_desa'];?>" readonly="readonly">
+            <input type="text" name="nama_desa" class="form-control" value="<?php echo $sab['nama_desa'];?>" readonly="readonly">
         </div>
     </div>
-    <div class="form-group">
-        <label class="col-lg-2 control-label">Kecamatan</label>
-        <div class="col-lg-5">
-            <input type="text" name="kecamatan" class="form-control" value="<?php echo $desa['kecamatan'];?>">
-        </div>
-    </div>
+    <hr>
+    <label style="margin-left:20px;">Sumber Air Baku yg digunakan untuk IPAM yg dikelola</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Mata air" <?php if($sab['sab_ipam']=='Mata air'){echo 'checked';};?>/> Mata air</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Air tanah dangkal" <?php if($sab['sab_ipam']=='Air tanah dangkal'){echo 'checked';};?>/> Air tanah dangkal</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Air tanah dalam (sumur bor)" <?php if($sab['sab_ipam']=='Air tanah dalam (sumur bor)'){echo 'checked';};?>/> Air tanah dalam (sumur bor)</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Embung/Situ" <?php if($sab['sab_ipam']=='Embung/Situ'){echo 'checked';};?>/> Embung/Situ</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Waduk/Bendungan" <?php if($sab['sab_ipam']=='Waduk/Bendungan'){echo 'checked';};?>/> Waduk/Bendungan</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Danau" <?php if($sab['sab_ipam']=='Danau'){echo 'checked';};?>/> Danau</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Air hujan" <?php if($sab['sab_ipam']=='Air hujan'){echo 'checked';};?>/> Air hujan</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Sungai" <?php if($sab['sab_ipam']=='Sungai'){echo 'checked';};?>/> Air tanah dangkal</td>
+            <td width="200px"><input type="radio" name="sab_ipam" value="Lainnya" <?php if($sab['sab_ipam']=='Lainnya'){echo 'checked';};?>/> Lainnya <input style="width:120px;" type="text"></td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-lg-2 control-label">Kota / Kabupaten</label>
-        <div class="col-lg-5">
-            <input type="text" name="kota" class="form-control" value="<?php echo $desa['kota'];?>">
-        </div>
-    </div>
+    <label style="margin-left:20px;">Status kepemilikan lahan sumber air baku</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="200px"><input type="radio" name="stat_klsab" value="Milik Perseorangan" <?php if($sab['stat_klsab']=='Milik Perseorangan'){echo 'checked';};?>/> Milik Perseorangan</td>
+            <td width="200px"><input type="radio" name="stat_klsab" value="Air tanah dangkal" <?php if($sab['stat_klsab']=='Air tanah dangkal'){echo 'checked';};?>/> Milik Negara</td>
+            <td width="200px"><input type="radio" name="stat_klsab" value="Air tanah dalam (sumur bor)" <?php if($sab['stat_klsab']=='Air tanah dalam (sumur bor)'){echo 'checked';};?>/> Milik Desa</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="stat_klsab" value="Air hujan" <?php if($sab['stat_klsab']=='Air hujan'){echo 'checked';};?>/> Tanah Wakaf</td>
+            <td width="200px"><input type="radio" name="stat_klsab" value="Lainnya" <?php if($sab['stat_klsab']=='Lainnya'){echo 'checked';};?>/> Lainnya <input style="width:120px;" type="text"></td>
+            <td colspan="1"></td>
+        </tr>
+    </table>
 
-    <br><h4>B. DATA UMUM</h4><br>
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Jumlah dusun di desa</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_dusun" class="form-control" value="<?php echo $desa['jml_dusun'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-    </div>
+    <label style="margin-left:20px;">Jarak air baku dari pemukiman</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="< 100 m" <?php if($sab['jarak_abdp']=='< 100 m'){echo 'checked';};?>/> &lt; 100 m</td>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="100 - 500 m" <?php if($sab['jarak_abdp']=='100 - 500 m'){echo 'checked';};?>/> 100 - 500 m</td>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="500 - 1.000 m" <?php if($sab['jarak_abdp']=='500 - 1.000 m'){echo 'checked';};?>/> 500 - 1.000 m</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="1.000 - 1.500 m" <?php if($sab['jarak_abdp']=='1.000 - 1.500 m'){echo 'checked';};?>/> 1.000 - 1.500 m</td>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="1.500 - 2.000 m" <?php if($sab['jarak_abdp']=='1.500 - 2.000 m'){echo 'checked';};?>/> 1.500 - 2.000 m</td>
+            <td width="200px"><input type="radio" name="jarak_abdp" value="> 2.000 m" <?php if($sab['jarak_abdp']=='> 2.000 m'){echo 'checked';};?>/> &gt; 2.000 m</td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Jumlah penduduk desa</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_penduduk_jw" class="form-control" value="<?php echo $desa['jml_penduduk_jw'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Jiwa</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_penduduk_kk" class="form-control" value="<?php echo $desa['jml_penduduk_kk'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
+     <table cellpadding="0" style="margin:0 0 10px 20px;">
+        <tr>
+            <td width="400px"><label>Kapasitas sumber air total (sebelum dipakai utk IPAM)</label></td>
+            <td width="200px"><input type="text" name="kapsat_sipam" style="width:120px;" value="<?php echo $sab['kapsat_sipam'];?>"> L/det</td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Jumlah penduduk perempuan</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_penduduk_p" class="form-control" value="<?php echo $desa['jml_penduduk_p'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Jiwa</label>
-    </div>
+    <table cellpadding="0" style="margin:0 0 10px 20px;">
+        <tr>
+            <td width="400px"><label>Kapasitas sumber air yg dipakai untuk IPAM</label></td>
+            <td width="200px"><input type="text" name="kapsat_ipam" style="width:120px;" value="<?php echo $sab['kapsat_ipam'];?>"> L/det</td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Jumlah penduduk yg mendapat layanan air minum layak</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_amlayak_kk" class="form-control" value="<?php echo $desa['jmlp_amlayak_kk'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_amlayak_ds" class="form-control" value="<?php echo $desa['jmlp_amlayak_ds'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-    </div>
+    <label style="margin-left:20px;">Kualitas</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="200px"><input type="radio" name="kualitas" value="Jernih" <?php if($sab['kualitas']=='Jernih'){echo 'checked';};?>/> Jernih</td>
+            <td width="200px"><input type="radio" name="kualitas" value="Tidak berwarna" <?php if($sab['kualitas']=='Tidak berwarna'){echo 'checked';};?>/> Tidak berwarna</td>
+            <td width="300px"><input type="radio" name="kualitas" value="Tidak bau" <?php if($sab['kualitas']=='Tidak bau'){echo 'checked';};?>/> Tidak bau</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="kualitas" value="Tidak ada rasa" <?php if($sab['kualitas']=='Tidak ada rasa'){echo 'checked';};?>/> Tidak ada rasa</td>
+            <td width="200px"><input type="radio" name="kualitas" value="Suhu normal" <?php if($sab['kualitas']=='Suhu normal'){echo 'checked';};?>/> Suhu normal</td>
+            <td width="300px"><input type="radio" name="kualitas" value="Tidak mengandung zat padat terlarut" <?php if($sab['kualitas']=='Tidak mengandung zat padat terlarut'){echo 'checked';};?>/> Tidak mengandung zat padat terlarut</td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Jumlah penduduk yg mendapat layanan air minum sistem perpipaan</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_amsp" class="form-control" value="<?php echo $desa['jmlp_amsp'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
+    <label style="margin-left:20px;">Kontinuitas</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir stabil sepanjang tahun" <?php if($sab['kontinu']=='Mengalir stabil sepanjang tahun'){echo 'checked';};?>/> Mengalir stabil sepanjang tahun</td>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir tidak stabil" <?php if($sab['kontinu']=='Mengalir tidak stabil'){echo 'checked';};?>/> Mengalir tidak stabil</td>
+        </tr>
+        <tr>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir stabil hanya musim hujan" <?php if($sab['kontinu']=='Mengalir stabil hanya musim hujan'){echo 'checked';};?>/> Mengalir stabil hanya musim hujan</td>
+            <td width="300px"><input type="radio" name="kontinu" value="Sumber hilang" <?php if($sab['kontinu']=='Sumber hilang'){echo 'checked';};?>/> Sumber hilang</td>
+        </tr>
+    </table>
 
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Jumlah sambungan rumah (SR)</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_sr_sr" class="form-control" value="<?php echo $desa['jml_sr_sr'];?>">
-        </div>
-        <label class="col-sm-1 control-label">SR</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_sr_kk" class="form-control" value="<?php echo $desa['jml_sr_kk'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Program Pamsimas</label>
-        <div class="col-sm-2">
-            <input type="number" name="p_pasimas" class="form-control" value="<?php echo $desa['p_pasimas'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="p_pasimas_st" value="Ada" <?php if($desa['p_pasimas_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="p_pasimas_st" value="Tidak" <?php if($desa['p_pasimas_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-     <div class="form-group">
-        <label class="col-sm-4 control-label">Program Dana Alokasi Khusus (DAK)</label>
-        <div class="col-sm-2">
-            <input type="number" name="p_dak" class="form-control" value="<?php echo $desa['p_dak'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="p_dak_st" value="Ada" <?php if($desa['p_dak_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="p_dak_st" value="Tidak" <?php if($desa['p_dak_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-4 control-label">PNPM Perkotaan</label>
-        <div class="col-sm-2">
-            <input type="number" name="pnpm_kota" class="form-control" value="<?php echo $desa['pnpm_kota'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="pnpm_kota_st" value="Ada" <?php if($desa['pnpm_kota_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="pnpm_kota_st" value="Tidak" <?php if($desa['pnpm_kota_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-4 control-label">PNPM Perdesaan</label>
-        <div class="col-sm-2">
-            <input type="number" name="pnpm_desa" class="form-control" value="<?php echo $desa['pnpm_desa'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="pnpm_desa_st" value="Ada" <?php if($desa['pnpm_desa_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="pnpm_desa_st" value="Tidak" <?php if($desa['pnpm_desa_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Swadaya / Perorangan</label>
-        <div class="col-sm-2">
-            <input type="number" name="swadaya" class="form-control" value="<?php echo $desa['swadaya'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="swadaya_st" value="Ada" <?php if($desa['swadaya_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="swadaya_st" value="Tidak" <?php if($desa['swadaya_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Lainnya (sebutkan)</label>
-        <div class="col-sm-3">
-            <input type="text" name="lainnya" class="form-control" value="<?php echo $desa['lainnya'];?>">
-        </div>
-        <div class="col-sm-2">
-            <input type="number" name="lainnya_ds" class="form-control" value="<?php echo $desa['lainnya_ds'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Dusun</label>
-        <div class="col-sm-2">
-            <input type="radio" name="lainnya_st" value="Ada" <?php if($desa['lainnya_st']=='Ada'){echo 'checked';};?>/> Ada
-            <input type="radio" name="lainnya_st" value="Tidak" <?php if($desa['lainnya_st']=='Tidak'){echo 'checked';};?>/> Tidak
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Permanen</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_jsp" class="form-control" value="<?php echo $desa['jmlp_jsp'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Semi Permanen</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_jssp" class="form-control" value="<?php echo $desa['jmlp_jssp'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg sudah akses Jamban Sehat Sharing</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_jss" class="form-control" value="<?php echo $desa['jmlp_jss'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg mendapat pelayanan pengelolaan sampah (diangkut petugas)</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_pps" class="form-control" value="<?php echo $desa['jmlp_pps'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg menngelola sampahnya sendiri</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_mss" class="form-control" value="<?php echo $desa['jmlp_mss'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg sudah menerapkan prinsip 3R</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_p3r" class="form-control" value="<?php echo $desa['jmlp_p3r'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg membakar sampah</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_ms" class="form-control" value="<?php echo $desa['jmlp_ms'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah ke badan air (sungai, selokan, kolam)</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_mskba" class="form-control" value="<?php echo $desa['jmlp_mskba'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah ke lahan kosong</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_msklk" class="form-control" value="<?php echo $desa['jmlp_msklk'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah penduduk yg membuang sampah di kebun/lahan kosong</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmlp_msdklk" class="form-control" value="<?php echo $desa['jmlp_msdklk'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg dilatih</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_wirastbm" class="form-control" value="<?php echo $desa['jml_wirastbm'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Orang</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg dilatih - Perempuan</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_wirastbm_p" class="form-control" value="<?php echo $desa['jml_wirastbm_p'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg aktif</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_wirastbm_a" class="form-control" value="<?php echo $desa['jml_wirastbm_a'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Orang</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah wirausaha STBM yg aktif - Perempuan</label>
-        <div class="col-sm-2">
-            <input type="number" name="jml_wirastbm_ap" class="form-control" value="<?php echo $desa['jml_wirastbm_ap'];?>">
-        </div>
-        <label class="col-sm-1 control-label">KK</label>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Jumlah sekolah yg pernah menerima program STBM atau Cuci tangan pakai sabun</label>
-        <div class="col-sm-2">
-            <input type="number" name="jmls_pstbm" class="form-control" value="<?php echo $desa['jmls_pstbm'];?>">
-        </div>
-        <label class="col-sm-1 control-label">Sekolah</label>
-    </div>
-
-    <br><h4>C. KONDISI SOSIAL EKONOMI DAN GEOGRAFIS</h4><br>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Mata pencaharian utama penduduk</label>
-        <div class="col-sm-3">
-            <select name="matapencaharian" class="form-control">
-                <option value="<?php echo $desa['matapencaharian'];?>"><?php echo $desa['matapencaharian'];?></option>
-                <option value=""></option>
-                <option value="Bertani">Bertani</option>
-                <option value="Berdagang">Berdagang</option>
-                <option value="Nelayan">Nelayan</option>
-                <option value="Pegawai Negeri">Pegawai Negeri</option>
-                <option value="Pegawai Swasta">Pegawai Swasta</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Lainnya</label>
-        <div class="col-sm-3">
-            <input type="text" name="matapencaharian_dll" class="form-control" value="<?php echo $desa['matapencaharian_dll'];?>">
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Rata-rata penghasilan penduduk per bulan</label>
-        <div class="col-sm-3">
-            <select name="rr_penghasilan" class="form-control">
-                <option value="<?php echo $desa['rr_penghasilan'];?>"><?php echo $desa['rr_penghasilan'];?></option>
-                <option value=""></option>
-                <option value="< Rp 2 Juta">&lt; Rp 2 Juta</option>
-                <option value="Rp 2 Juta">Rp 2 Juta</option>
-                <option value="Rp 3 - 5 Juta">Rp 3 - 5 Juta</option>
-                <option value="Rp 5 - 10 Juta">Rp 5 - 10 Juta</option>
-                <option value="Diatas Rp 10 Juta">Diatas Rp 10 Juta</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Besar biaya rata-rata yg dikeluarkan penduduk utk air minum per bulan</label>
-        <div class="col-sm-3">
-            <select name="rr_airminum" class="form-control">
-                <option value="<?php echo $desa['rr_airminum'];?>"><?php echo $desa['rr_airminum'];?></option>
-                <option value=""></option>
-                <option value="< Rp 25.000">&lt; Rp 25.000</option>
-                <option value="Rp 25.000 - 50.000">Rp 25.000 - 50.000</option>
-                <option value="Diatas Rp 50.000">Diatas Rp 50.000</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label class="col-sm-5 control-label">Tipe wilayah</label>
-        <div class="col-sm-3">
-            <select name="tipe_wil" class="form-control">
-                <option value="<?php echo $desa['tipe_wil'];?>"><?php echo $desa['tipe_wil'];?></option>
-                <option value=""></option>
-                <option value="Dataran rendah/datar">Dataran rendah/datar</option>
-                <option value="Dataran tinggi/pegunungan">Dataran tinggi/pegunungan</option>
-                <option value="Perairan sungai">Perairan sungai</option>
-                <option value="Perairan laut">Perairan laut</option>
-            </select>
-        </div>
-    </div>
+    <label style="margin-left:20px;">Kuantitas curah hujan (khusus yg bersumber air hujan)</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan tinggi sepanjang tahun" <?php if($sab['kuantitas']=='Curah hujan tinggi sepanjang tahun'){echo 'checked';};?>/> Curah hujan tinggi sepanjang tahun</td>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan sedang" <?php if($sab['kuantitas']=='Curah hujan sedang'){echo 'checked';};?>/> Curah hujan sedang</td>
+        </tr>
+        <tr>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan rendah" <?php if($sab['kuantitas']=='Curah hujan rendah'){echo 'checked';};?>/> Curah hujan rendah</td>
+            <td colspan="1"></td>
+        </tr>
+    </table>
 
 
     <div class="form-group well">

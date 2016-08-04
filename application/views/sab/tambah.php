@@ -56,6 +56,58 @@
         </tr>
     </table>
 
+     <table cellpadding="0" style="margin:0 0 10px 20px;">
+        <tr>
+            <td width="400px"><label>Kapasitas sumber air total (sebelum dipakai utk IPAM)</label></td>
+            <td width="200px"><input type="text" name="kapsat_sipam" style="width:120px;"> L/det</td>
+        </tr>
+    </table>
+
+    <table cellpadding="0" style="margin:0 0 10px 20px;">
+        <tr>
+            <td width="400px"><label>Kapasitas sumber air yg dipakai untuk IPAM</label></td>
+            <td width="200px"><input type="text" name="kapsat_ipam" style="width:120px;"> L/det</td>
+        </tr>
+    </table>
+
+    <label style="margin-left:20px;">Kualitas</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="200px"><input type="radio" name="kualitas" value="Jernih"> Jernih</td>
+            <td width="200px"><input type="radio" name="kualitas" value="Tidak berwarna"> Tidak berwarna</td>
+            <td width="300px"><input type="radio" name="kualitas" value="Tidak bau"> Tidak bau</td>
+        </tr>
+        <tr>
+            <td width="200px"><input type="radio" name="kualitas" value="Tidak ada rasa"> Tidak ada rasa</td>
+            <td width="200px"><input type="radio" name="kualitas" value="Suhu normal"> Suhu normal</td>
+            <td width="300px"><input type="radio" name="kualitas" value="Tidak mengandung zat padat terlarut"> Tidak mengandung zat padat terlarut</td>
+        </tr>
+    </table>
+
+    <label style="margin-left:20px;">Kontinuitas</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir stabil sepanjang tahun"> Mengalir stabil sepanjang tahun</td>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir tidak stabil"> Mengalir tidak stabil</td>
+        </tr>
+        <tr>
+            <td width="300px"><input type="radio" name="kontinu" value="Mengalir stabil hanya musim hujan"> Mengalir stabil hanya musim hujan</td>
+            <td width="300px"><input type="radio" name="kontinu" value="Sumber hilang"> Sumber hilang</td>
+        </tr>
+    </table>
+
+    <label style="margin-left:20px;">Kuantitas curah hujan (khusus yg bersumber air hujan)</label><br>
+    <table cellpadding="0" style="margin:0 0 10px 35px;">
+        <tr>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan tinggi sepanjang tahun"> Curah hujan tinggi sepanjang tahun</td>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan sedang"> Curah hujan sedang</td>
+        </tr>
+        <tr>
+            <td width="300px"><input type="radio" name="kuantitas" value="Curah hujan rendah"> Curah hujan rendah</td>
+            <td colspan="1"></td>
+        </tr>
+    </table>
+
     <div class="form-group well">
         <button class="btn btn-primary"><i class="glyphicon glyphicon-hdd"></i> Simpan</button>
         <a href="<?php echo site_url('sab');?>" class="btn btn-default">Kembali</a>

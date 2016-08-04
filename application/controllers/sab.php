@@ -51,7 +51,14 @@ class Sab extends CI_Controller{
 
                 $info=array(
                     'nama_desa'=>$this->input->post('nama_desa'),
-                    'sab_ipam'=>$this->input->post('sab_ipam')
+                    'sab_ipam'=>$this->input->post('sab_ipam'),
+                    'stat_klsab'=>$this->input->post('stat_klsab'),
+                    'jarak_abdp'=>$this->input->post('jarak_abdp'),
+                    'kapsat_sipam'=>$this->input->post('kapsat_sipam'),
+                    'kapsat_ipam'=>$this->input->post('kapsat_ipam'),
+                    'kualitas'=>$this->input->post('kualitas'),
+                    'kontinu'=>$this->input->post('kontinu'),
+                    'kuantitas'=>$this->input->post('kuantitas')
                 );
                 $this->m_sab->simpan($info);
                 redirect('sab/index/add_success');
@@ -70,10 +77,7 @@ class Sab extends CI_Controller{
             $nama_desa=$this->input->post('nama_desa');
             
             $info=array(
-                    'nama_desa'=>$this->input->post('nama_desa'),
-                    'kecamatan'=>$this->input->post('kecamatan'),
-                    'kota'=>$this->input->post('kota'),
-                    'tipe_wil'=>$this->input->post('tipe_wil')
+                    'nama_desa'=>$this->input->post('nama_desa')
                 );
             //update data sumber air baku
             $this->m_sab->update($nama_desa,$info);
